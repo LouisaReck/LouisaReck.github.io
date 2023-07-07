@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Louisa</title>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <script src="https://kit.fontawesome.com/9d412a7b8f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="resources/logo-1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Interaction Design Student</p>
+            <h1>Hi, I'm <span>Louisa</span> Reck <br>from Sweden</h1><!-- Lägg till rätt text--> 
+
+        </div>
+    </div>
+</div>
+<!--------------about------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="resources/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>                                         <!-- Lägg till rätt text--> 
+                    I’m a 24-year-old masters student and design enthusiast from Gothenburg, Sweden.
+                    I am currently on an exchange semester at the National University of Singapore, 
+                    where I am immersing myself in new cultural experiences while furthering my education. 
+                    I am a social and outgoing person with a passion for user research and design.
+                    I am always seeking new opportunities to grow and with a friendly and outgoing personality, 
+                    I thrive in collaborative environments and am always eager to learn and contribute to new projects.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+
+
+
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>Jan 2023 - Mai 2023</span><br>National University of Singapore<br>
+                            <p>Studying courses in communication, programming, and design to enhance my skill set.</p></li>
+                        <li><span>2019 - 2024</span><br> Chalmers University of Technology<br>
+                            <p>M Sc. Interaction design and Technologies<br>
+                            B. Sc. Industrial design engineering.<br>
+                            A member of the Student Educational Committee from 2020 to 2021.</p></li>
+                        <li><span>2017-2018</span><br>Linnaeus University<br><p>Engineering preparatory year</p></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Mai 2021 -</span><br>Store assistant, Willys Hvitfeldtsplatsen, Göteborg<br>
+                            <p>Working as a store assistant involves providing excellent customer service and ensuring efficient daily operations.</p></li>
+                        <li><span>Summer 2019 & 2020</span><br>Store manager, ICA Nära Böda Sand<br>
+                            <p>Working as a store manager included overseeing daily operations, <br>
+                            managing staff, and ensuring a positive customer experience.</p></li>
+                        <li><span>2015-2019</span><br>Store assistant, ICA supermarket Tingsryd</li>
+                    </ul>
+                </div>
+                <div class="tab-contents skills" id="skills">
+                    <ul>
+                        <li><p>Figma</p><span class="bar"><span class="figma"></span></span></li>
+                        <li><p>HTML & CSS</p><span class="bar"><span class="html"></span></span></li>
+                        <li><p>JavaScript</p><span class="bar"><span class="javascript"></span></span></li>
+                        <li><p>Photoshop</p><span class="bar"><span class="Photoshop"></span></span></li>
+                        <li><p>Illustrator</p><span class="bar"><span class="Illustrator"></span></span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--------------
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br> Web app development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+    
+------------->
+
+
+<!--------------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="resources/work-1.png">
+                <div class="layer">
+                    <h3>Booking Page</h3>
+                    <p>Chalmers, 2022</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/work-1.png">
+                <div class="layer">
+                    <h3>Booking Page</h3>
+                    <p>Chalmers, 2022</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/work-1.png">
+                <div class="layer">
+                    <h3>Booking Page</h3>
+                    <p>Chalmers, 2022</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>Louisareck@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+46730262240</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/louisa-reck-903b9a17b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/LouisaReck"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="resources/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby99PvHEm6P9YAhGzLsd8vNmYFYBPByL8nw7T7aLpLc0zUsZ4fNKMhYl-hFDm4C2G5-/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout (function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
