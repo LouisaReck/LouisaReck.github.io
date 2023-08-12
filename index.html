@@ -12,7 +12,7 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="resources/logo-1.png" class="logo">
+            <img src="resources/logo-4.png" class="logo" href="index.html #header">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -22,10 +22,15 @@
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="header-text">
-            <p>Interaction Design Student</p>
-            <h1>Hi, I'm <span>Louisa</span> Reck <br>from Sweden</h1><!-- Lägg till rätt text--> 
-
+        <div class="container-wrap">
+            <div class="header-text">
+                <h1>Louisa Reck</h1><!-- Lägg till rätt text--> 
+                <h1><span class="multi-text"></span></h1>
+                <p>Im a 5th year masters student in Interaction Design with a newfound passion for frontend development. </p>
+            </div>
+            <div class="wrapper">
+                <div class="box-wrap"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -108,31 +113,52 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="resources/work-1.png">
+                <img src="resources/work-5.png">
                 <div class="layer">
-                    <h3>Booking Page</h3>
-                    <p>Chalmers, 2022</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>A motivational student fitness planner</h3>
+                    <p>National University of Singapore <br> 2023</p>
+                    <a href="work-1.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="resources/work-1.png">
+                <img src="resources/Bookit-work-3.png">
                 <div class="layer">
                     <h3>Booking Page</h3>
-                    <p>Chalmers, 2022</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>Chalmers University of Technology <br> 2022</p>
+                    <a href="work-3.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="resources/work-1.png">
+                <img src="resources/WHR-work-4.png">
                 <div class="layer">
-                    <h3>Booking Page</h3>
-                    <p>Chalmers, 2022</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Data Story on World Happiness using Chart.js</h3>
+                    <p>National University of Singapore <br> 2023</p>
+                    <a href="work-4.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <div class="work-list">
+            <div class="work">
+                <img src="resources/Connectify-work-3.png">
+                <div class="layer">
+                    <h3>Interface design for remote collaborating</h3>
+                    <p>Chalmers University of Technology <br> 2022</p>
+                    <a href="work-2.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/Podcaster-work-5.png">
+                <div class="layer">
+                    <h3>Usability study and Redesign of Apples Podcaster app</h3>
+                    <p>Chalmers University Of Technology <br> 2021</p>
+                    <a href="work-5.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+
+            </div>
+        </div>
+        <!--  <a href="#" class="btn">See more</a>  -->
     </div>
 </div>
 <!--------------contact------------->
@@ -159,9 +185,6 @@
                 <span id="msg"></span>
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
     </div>
 </div>
 
@@ -193,22 +216,16 @@
     }
 </script>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby99PvHEm6P9YAhGzLsd8vNmYFYBPByL8nw7T7aLpLc0zUsZ4fNKMhYl-hFDm4C2G5-/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent succesfully"
-            setTimeout (function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typingEffect = new Typed(".multi-text", {
+        strings : ["UX Designer","Frontend Developer"],
+        loop : true,
+        typeSpeed : 100,
+        backSpeed : 80,
+        backDelay : 1500,
+
     })
   </script>
 

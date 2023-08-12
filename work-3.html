@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Louisa</title>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <script src="https://kit.fontawesome.com/9d412a7b8f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header-work-1">
+    <div class="container">
+        <nav>
+            <a href="index.html #header">
+                <img src="resources/logo-4.png" class="logo">
+            </a>
+            <ul id="sidemenu">
+                <li><a href="index.html #header">Home</a></li>
+                <li><a href="index.html #about">About</a></li>
+                <li><a href="index.html #portfolio">Projects</a></li>
+                <li><a href="index.html #contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+<!--------------------Header ---------------->
+<div id="project">
+    <div class="container">
+        <div class="row">
+            <div class="project-col-1-bookit">
+                <h1>Bookit: A <span>user interface</span> Design for a <span>resource booking website</span></h1>
+                <p>Chalmers University of Technology</p>
+                <ul>
+                    <li><span>Team:</span> Individual work </li>
+                    <li> <span>Duration:</span> 3 weeks</li>
+                    <li> <span>Tool:</span> Figma </li>
+                </ul>
+            </div>
+            <div class="project-col-2-bookit">
+                <img src="resources/bookit-mockup-4.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------Background & Problem statement & Design Process---------------->
+
+<section class="background">
+    <div class="container-text">
+        <div class="text-1">
+            <h1>Project Overview</h1>
+        <br>
+        <p>The aim of this project was to design a resource booking website specifically for Chalmers University students and teachers. 
+            Bookit streamlines the process of reserving rooms and equipment, while also providing a filter option to search for available resources 
+            based on specific criteria such as time, date, and room or equipment type. Users can also conveniently book multiple rooms and equipment at once.
+             Additionally, the website offers user-friendly features for easy creation, editing, and cancellation of bookings.
+        </p>
+        <br>
+        <br>
+        <h1>Problem Statement</h1>
+        <br>
+        <p>Balancing automatic booking and manual control during the booking process is crucial. The system should assist users in finding available 
+            rooms and allow for quick booking, while also enabling manual adjustments to room selection. Proper controls and feedback are necessary for 
+            effective interaction between automatic algorithms and user-controlled selection.
+        </p>
+        <br>
+        <br>
+        <h1>Design Process</h1>
+        <br>
+        <p>The problem statement and requirements were given at the beginning of the project, so my work began with benchmarking. 
+            I took inspiration from other booking resources such as TimeEdit and Airbnb, and created some wireframes. During the website design process, 
+            I also asked friends and family to try the prototype and give feedback on the overall design.
+        </p>
+        
+
+
+        </div>
+    
+    </div>
+
+</section>
+
+
+<!--------------------Result--------------->
+<section class="result">
+    <h1>Result</h1>
+    <div class="container-image-bookit">
+        <img src="resources/bookit-mockup-2.png" alt="">
+    </div>
+
+</section>
+
+
+<!--------------------Demo---------------->
+<section class="problem">
+    <div class="container-4">
+            <div class="text-4">
+                <h1>Home Page</h1>
+                <p>The website's home page will offer direct access to search and filter functionality, enabling users to easily find available 
+                    resources that meet their specific needs even without logging in. However, to make new bookings and access current bookings, users 
+                    must log in to the website.</p>
+            </div>
+
+            <div class="image-4">
+                <img src="resources/bookit-1.png">
+            </div>
+    </div>
+</section>
+
+<section class="problem">
+    <div class="container-4">
+        <div class="image-4">
+            <img src="resources/bookit-2.png">
+        </div>
+            <div class="text-5-left">
+                <h1>My Bookings</h1>
+                <p>On the "My Bookings" page, users can view their active bookings. They can toggle between week and day view in the calendar 
+                    to get the desired overview. The page displays important information about the booking, including the date, location, time, 
+                    status, and whether it is a shared or personal booking. Users can also easily edit or delete bookings.</p>
+            </div>
+    </div>
+</section>
+
+<section class="problem">
+    <div class="container-4">
+            <div class="text-4">
+                <h1>Undo</h1>
+                <p>When you delete a booking, a pop-up window will appear, remaining visible for 10 seconds. 
+                    Within this timeframe, you have the option to undo the action, and the booking will be restored. 
+                    Alternatively, you can simply close the pop-up directly without affecting the booking. 
+                    This feature ensures a user-friendly experience, providing a safety net in case of accidental deletions.</p>
+            </div>
+
+            <div class="image-4">
+                <img src="resources/bookit-3.png">
+            </div>
+    </div>
+</section>
+
+<section class="problem">
+    <div class="container-4">
+        <div class="image-4">
+            <img src="resources/bookit-4.png">
+        </div>
+            <div class="text-5-left">
+                <h1>Booking A Room</h1>
+                <p>You can easily search for a booking by location, date, and equipment. 
+                    Unavailable time slots are displayed in grey, making it clear when a room is not free.
+                     Hovering over a slot in the calendar changes its color and provides additional details 
+                     about the date and time. When you select a slot, the calendar automatically switches to the booking window for a seamless user experience. </p>
+            </div>
+    </div>
+</section>
+
+<section class="problem">
+    <div class="container-4">
+            <div class="text-4">
+                <h1>Filter Option</h1>
+                <p>A filter option allows users to fine-tune their requirements. The filtered results are presented as various booking options that 
+                    can be directly reserved. The feature also suggests different room combinations to provide more flexibility in selecting the most 
+                    suitable booking arrangement.</p>
+            </div>
+
+            <div class="image-4">
+                <img src="resources/bookit-5.png">
+            </div>
+    </div>
+</section>
+
+<section class="problem">
+    <div class="container-4">
+        <div class="image-4">
+            <img src="resources/bookit-6.png">
+        </div>
+            <div class="text-5-left">
+                <h1>Automatic Booking</h1>
+                <p>Furthermore, the filter offers users the choice to set a repeat pattern for automatic bookings. 
+                    If a repeat pattern is selected, and one of the dates is unavailable, the system will provide alternative suggestions 
+                    for available bookings. Alternatively, users can edit the booking manually. This feature enhances convenience and flexibility 
+                    in managing recurring reservations.</p>
+            </div>
+    </div>
+</section>
+
+<section class="problem">
+    <div class="container-4">
+            <div class="text-4">
+                <h1>Shared booking</h1>
+                <p>Once the booking is confirmed, users have the option to share it with their classmates, teachers, or TAs. When the booking is shared, 
+                    the recipient receives a notification containing details about the date, time, and location. The recipient can choose to ignore the 
+                    invitation by selecting "cancel" or add the booking to their own "My bookings" section, which will then be displayed in their calendar 
+                    for easy reference. This feature facilitates seamless collaboration and ensures everyone involved stays informed about the scheduled events.</p>
+            </div>
+
+            <div class="image-4">
+                <img src="resources/bookit-7.png">
+            </div>
+    </div>
+</section>
+
+<section class="overview">
+    <h1>Overview of drop-downs and pop-ups</h1>
+    <div class="container-image-bookit-1">
+        <img src="resources/bookit-overview.png" alt="">
+    </div>
+    <h1>Demo</h1>
+    <div class="container-image-bookit-1">
+        <img src="resources/bookit-Demo.gif" alt="">
+    </div>
+
+</section>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
